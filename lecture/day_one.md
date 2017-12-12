@@ -85,6 +85,7 @@ Note:
 + `+`, `-`, `*`, `/`, `%`
   * `/`: rounds down
   * `%`: modulo operation => remainder
++ Order of Operations still applies!
 
 ---
 
@@ -97,6 +98,21 @@ puts 2 * 5
 puts 2 / 5
 puts 2.0 / 5.0
 puts 2 % 5
+puts (2+5) * 6 / 3
+```
+
+---
+
+### More Division + Modulo Practice
+
+```ruby
+25 / 4
+1 / 17
+0 / 17
+
+24 % 5
+1 % 4
+0 % 8
 ```
 
 ---
@@ -214,6 +230,8 @@ puts 2 == 5
 puts 2 != 5
 puts 5 == "5"
 puts "a" < "b"
+puts !true
+puts !false
 ```
 
 ---
@@ -236,6 +254,24 @@ I'm going to just tell them I love them."
 
 ---
 
+### If ... Else
+
+```ruby
+if (true)
+  puts "You will never know my secrets"
+else
+  puts "Deepest Darkest Secret"
+end
+```
+Note:
+
+Talk about the syntax here. Note what has conditions and notice the
+single `end` statement. They most likely haven't been exposed to `end`
+until now, so go over what that means.
+`else` also happens at the very last bit
+
+---
+
 ```ruby
 if (time > bedtime)
   # notice that this code is indented - that can be done using a single
@@ -250,19 +286,22 @@ end
 
 Note:
 
-Talk about the syntax here. Note what has conditions and notice the
-single `end` statement. They most likely haven't been exposed to `end`
-until now, so go over what that means.
-`else` also happens at the very last bit
+Make sure to explain the syntax for commenting in Ruby. Also note
+that there are multiple ways to do comments (multi-line comments) and
+that they differ from language to language.
 
 ---
 
 ### CODE
 
-Write a series of conditional statements that will print the statement
+1. Write a series of conditional statements that will print the statement
 "this number is even" if a given number is even, print the statement
 "this number is odd" if a given number is odd, and print "this number is
 neither even or odd" for all other situations.
+
+2. Write a series of conditional statements that will print the
+string "fizz" if the given number is divisible by 3 or the string
+"buzz" if the given number is divisible by 5. Otherwise print the number.
 
 ---
 
@@ -319,7 +358,13 @@ end
 
 ### CODE
 
-Write a series of conditional statements that print "found" if the given
+1. Let's extend the `Fizzbuzz` problem we encountered earlier.
+Write a series of conditional statements that will print the
+string "fizz" if the given number is divisible by 3, the string
+"buzz" if the given number is divisible by 5, or the string "fizzbuzz"
+if the number is divisible by both 3 and 5. Otherwise print the number.
+
+2. Write a series of conditional statements that print "found" if the given
 number is between the numbers 1 - 10 or is 25. Otherwise, print
 "definitely not found"
 
@@ -344,8 +389,11 @@ puts("You typed " + num.to_s + " which is at least 100!")
 
 ### CODE
 
-Let's go back to the first example. Write a loop that prints out
+1. Let's go back to the first example. Write a loop that prints out
 the statement "Hello, World!" three times with as least code as possible.
+
+2. Given a specific number, write a loop that will print `true` if the
+number is prime and `false` if the number is not.
 
 ---
 
@@ -357,7 +405,9 @@ Note: Demo an infinite loop
 
 ### Arrays
 
-Arrays store sequences of objects, separated by commas
+Arrays store sequences of objects, separated by commas.
+Why is that useful? Well, this **_data structure_** provides us a
+handy way to store lists of values that are related in a single variable.
 
 ```ruby
 cool_things = ["Racecars", "Lasers", "Aeroplanes"]
@@ -370,9 +420,17 @@ an_empty_array = []
 ### Indexing
 
 Arrays wouldn't be very useful if we couldn't get things out of them.
-That's where an index is helpful.
+So how are we going to access a specific value within the array?
 
-Indices ALWAYS start at 0 in programming.
+The answer: indices.
+
+Think of an index as the position of a value in the list. Indices ALWAYS
+start at 0 in programming. So if you want the first value in the list
+(reading from left to right), you'll access the O<sup>th</sup>
+position. The second value from the first and so on.
+
+You can also change a specific position's value, so in that way, an array
+is very much like a group of ordered variables.
 
 Note:
 
@@ -384,6 +442,9 @@ cool_things = ["Racecars", "Lasers", "Aeroplanes"]
 puts(cool_things[0])
 puts(cool_things[1])
 puts(cool_things[2])
+
+cool_things[2] = "Airplanes"
+puts cool_things[2]
 ```
 
 ---
@@ -417,6 +478,17 @@ puts("PRESIDENTS LOOP COMPLETED!")
 Note:
 point out the array length method as intro to methods on data structures
 this is a common use case for using arrays (iterating through lists)
+
+---
+
+### CODE
+
+1. You are given the array `[nil,nil,nil,nil,nil]`. Write a program that
+loops through the array (from beginning to end) and prints the phrase
+"I love App Academy" every time. You should see the phrase five times.
+
+2. You are given the array `[1,2,3,4,5,6,7,8,9]`. Write a program that
+loops through the array and prints the number of values that are prime.
 
 ---
 
@@ -472,7 +544,23 @@ starts. What if we want to just tell the program to print any word.
 
 ---
 
-### Anatomy of a Method
+### Function
+
++ A function is a block of organized, reusable code that is used to
+perform a single, related action
++ they can have inputs (aka arguments) and outputs
+
+```
+f(x) = 2x + 5
+```
+
+Note:
+
+Go over what would be considered the input + output
+
+---
+
+### Anatomy of a Method / Function
 
 ```ruby
 def print_word(word) # def, name of method, arguments for method
@@ -483,9 +571,16 @@ def print_word(word) # def, name of method, arguments for method
 end
 ```
 
+Note:
+
+Tell them in Ruby, methods + functions are interchangeable terms
+
 ---
 
 ### Return Statement
+
++ The value that follows the `return` is the output of a function
++ Not all functions need to return something, but typically do
 
 ```ruby
 def count_vowels(word)
