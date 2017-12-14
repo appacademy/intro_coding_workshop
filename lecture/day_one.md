@@ -13,12 +13,6 @@ Note: short blurb about myself
 1. Shameless Plug
 2. Getting Started
 3. Fundamental Programming Concepts
-  + Numbers
-  + Data Types
-  + Variables
-  + Methods
-  + Logic and Control Flow
-  + Data Structures - Arrays + Strings
 4. Personal Computer Configuration
 
 ---
@@ -196,20 +190,7 @@ puts phrase
 
 ---
 
-### Methods So Far
-
-+ `+`
-+ `-`
-+ `*`
-+ `/`
-+ `%`
-+ `puts`
-+ `to_i`
-+ `to_s`
-
----
-
-### Comparison Methods
+### Comparison Operations
 
 + `<`
 + `>`
@@ -223,6 +204,8 @@ Mention common mistake between `=` and `==`
 
 ---
 
+### REPL IT
+
 ```ruby
 puts 2 < 5
 puts 2 > 5
@@ -233,6 +216,10 @@ puts "a" < "b"
 puts !true
 puts !false
 ```
+
+Note:
+
+They will do that in their own REPL environments for slides with this title
 
 ---
 
@@ -263,6 +250,7 @@ else
   puts "Deepest Darkest Secret"
 end
 ```
+
 Note:
 
 Talk about the syntax here. Note what has conditions and notice the
@@ -340,7 +328,7 @@ end
 
 ---
 
-### Mistake
+### Common Mistake
 
 ```ruby
 # Wrong!
@@ -399,7 +387,9 @@ number is prime and `false` if the number is not.
 
 ### Infinite Loops
 
-Note: Demo an infinite loop
+Note:
+
+Demo an infinite loop
 
 ---
 
@@ -489,58 +479,6 @@ loops through the array (from beginning to end) and prints the phrase
 
 2. You are given the array `[1,2,3,4,5,6,7,8,9]`. Write a program that
 loops through the array and prints the number of values that are prime.
-
----
-
-### Strings
-
-Similar to arrays, but specifically a data type for words
-
-```ruby
-my_string = "Hello World!"
-puts(my_string.length) # prints 12
-
-i = 0
-while i < my_string.length
-  # prints out the letters of "Hello World" one-by-one, each on its own
-  # line.
-  puts(my_string[i])
-
-  i = i + 1
-end
-```
-
----
-
-### String Split
-
-```ruby
-"I am a sentence!".split == ["I", "am", "a", "sentence!"]
-"word".split("") == ["w", "o", "r", "d"]
-```
-
----
-
-### Code
-
-Write a loop that goes through each character of a string a prints the
-number of vowels in the word.
-
----
-
-Let's say we want to be able to loop 3 times to print any phrase we want.
-The code would look something like this.
-
-```ruby
-i = 0
-while (i < 3)
-  puts word
-  i += 1
-end
-```
-
-But the issue is, the variable `word` has to be defined before the loop
-starts. What if we want to just tell the program to print any word.
 
 ---
 
@@ -637,5 +575,15 @@ Since they won't have access to the dotfiles, we probably need to pull
 them into a public repo temporarily.
 
 Maybe even publicize the repo.
+
+---
+
+### Navigating Your Terminal
+
++ `pry`: open a Ruby REPL environment
++ `ls`: list all files and directories in the current folder
++ `mkdir <name>`: Make a file directory of the given name
++ `cd <name>`: move into a directory in the current folder
++ `ruby <filename>`: execute Ruby code in given file
 
 ---
