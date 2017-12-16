@@ -44,10 +44,10 @@ Tell them in Ruby, methods + functions are interchangeable terms
 + Not all functions need to return something, but typically do
 
 ```ruby
-def count_vowels(word)
+def count_vowels(array_of_letters)
   vowels = ["a", "e", "i", "o", "u"]
   num_vowels = 0
-  word.split("").each do |character|
+  array_of_letters.each do |character|
     if vowels.include?(character)
       num_vowels += 1
     end
