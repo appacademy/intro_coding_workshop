@@ -99,6 +99,7 @@ Note:
 
 This is the first time we ask for user input. Take a moment to talk about
 the `gets` method
+I find it useful to think of `gets` and `puts` as opposites
 
 ---
 
@@ -124,7 +125,7 @@ end
 puts("Input a number!")
 
 number = gets.to_i
-if number == (7 || 13)
+if number == (7 || 13) # MISTAKE
   puts("You input a magic number!")
 else
   puts("Your number is not magical")

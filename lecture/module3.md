@@ -53,8 +53,6 @@ the statement "Hello, World!" three times with as least code as possible.
 3. Given a specific number, write a program that will print `true` if the
 number is prime and `false` if the number is not.
 
-4. **CHALLENGE**: Write a loop that prints the first `n` numbers of the Fibonacci sequence
-
 Note:
 
 Give them the algorithm to determine if a number is prime so they just

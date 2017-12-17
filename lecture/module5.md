@@ -24,11 +24,8 @@ Go over what would be considered the input + output
 ### Anatomy of a Method / Function
 
 ```ruby
-def print_word(word) # def, name of method, arguments for method
-  while (i < 3)
-    puts word
-    i += 1
-  end
+def f(x) # def, name of method, arguments for method
+  return 2*x + 5
 end
 ```
 
@@ -42,20 +39,6 @@ Tell them in Ruby, methods + functions are interchangeable terms
 
 + The value that follows the `return` is the output of a function
 + Not all functions need to return something, but typically do
-
-```ruby
-def count_vowels(array_of_letters)
-  vowels = ["a", "e", "i", "o", "u"]
-  num_vowels = 0
-  array_of_letters.each do |character|
-    if vowels.include?(character)
-      num_vowels += 1
-    end
-  end
-
-  return num_vowels
-end
-```
 
 Note:
 
