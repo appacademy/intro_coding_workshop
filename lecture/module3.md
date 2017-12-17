@@ -50,7 +50,7 @@ puts("You typed " + num.to_s + " which is at least 100!")
 2. Let's go back to the first example. Write a loop that prints out
 the statement "Hello, World!" three times with as least code as possible.
 
-3. Given a specific number, write a loop that will print `true` if the
+3. Given a specific number, write a program that will print `true` if the
 number is prime and `false` if the number is not.
 
 4. **CHALLENGE**: Write a loop that prints the first `n` numbers of the Fibonacci sequence

@@ -8,12 +8,13 @@
 
 ---
 
-### Lecture Agenda
+### Schedule
 
 1. Shameless Plug
-2. Getting Started
-3. Fundamental Programming Concepts
-4. Personal Computer Configuration
+2. Tour of App Academy
+3. Getting Started
+4. Fundamental Programming Concepts
+5. Personal Computer Configuration
 
 ---
 

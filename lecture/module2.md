@@ -23,7 +23,7 @@ condition = true
 if (condition)
   puts "You will never know my secrets"
 else
-  puts "Deepest Darkest Secret"
+  puts "Deepest Darkest Secret: I love Corgis"
 end
 ```
 
@@ -33,6 +33,10 @@ Talk about the syntax here. Note what has conditions and notice the
 single `end` statement. They most likely haven't been exposed to `end`
 until now, so go over what that means.
 `else` also happens at the very last bit
+
+This is an example of control flow
+
+TODO: add a bit about the phrase `control flow`
 
 ---
 

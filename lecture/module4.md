@@ -126,11 +126,7 @@ by element.
 loops through the array (from beginning to end) and prints the phrase
 "I love App Academy" every time. You should see the phrase five times.
 
-3. You are given the array `[1,2,3,4,5,6,7,8,9]`. Write a program that
-loops through the array and prints the number of values that are prime.
-
-4. **Challenge**: Write a program that will use an array to print the
-first `n` Fibonacci numbers.
+3. You are given the array [1,2,3,4,5]. You are asked to loop through the array and replace each position with the product of the number at that position and the index. Print out the new array.
 
 ---
 

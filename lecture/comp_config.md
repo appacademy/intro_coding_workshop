@@ -4,7 +4,7 @@
 
 ### Atom and Dotfiles
 
-### https://github.com/chungkikelly/dotfiles
+https://github.com/appacademy/dotfiles
 
 ---
 

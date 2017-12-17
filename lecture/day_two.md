@@ -28,7 +28,9 @@
 
 ---
 
-## Benefits of Pair Programming
+What to note verbally:
+
+Benefits of Pair Programming
 
 1. Pairs are a second pair of eyes. Since most novice mistakes are
    trivial, your pair has a greater chance of immediately identifying
@@ -44,8 +46,6 @@
    pairs, students help keep each other honest.
 4. Working with other people is fun; we do a lot of coding, and it
    ought to be enjoyable.
-
----
 
 ## Pitfalls of Pair Programming
 
@@ -63,5 +63,9 @@ it wrong.
 
 **If one of you is typing away and the other is passively watching,
 you are both doing it wrong**.
+
+---
+
+## Problem Sets
 
 ---
